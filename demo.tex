@@ -1,4 +1,4 @@
-\documentclass[9pt]{beamer}
+\documentclass{beamer}
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 % Use roboto Font (recommended)
@@ -13,7 +13,7 @@
 \usefolder{styles}
 % Use Flux theme v0.1 beta
 % Available style: asphalt, blue, red, green, gray 
-\usetheme[style=asphalt]{flux}
+\usetheme[style=ufrn]{flux}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -31,7 +31,8 @@
 \author{John Doe}
 \institute{Institute, location}
 \date{\today}
-\titlegraphic{assets/overleaf.png}
+%\titlegraphic{assets/ECT_horiz.pdf}
+\titlegraphic{assets/UFRN_negativo.pdf}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 \begin{document}
@@ -64,6 +65,20 @@
 	#1 & \cellcolor{primary}\hspace*{1cm} &\cellcolor{primaryLight}\hspace*{1cm}&\cellcolor{secondary}\hspace*{1cm}&\cellcolor{tertiary}\hspace*{1cm}\\
  	\end{tabular}
  	}
+      	\definecolor{primaryLight}{cmyk}{1.00,0.60,0.40,0}
+      	\definecolor{primary}{cmyk}{.35,0,0,1.0}
+      	\definecolor{secondary}{cmyk}{0.28,0,0.85,0.17}
+      	\definecolor{tertiary}{cmyk}{0.7,0.30,0.0,0.00}
+ 	\colorRow{ECT}\\[0.3cm]
+      	\definecolor{primaryLight}{HTML}{0095db}
+      	\definecolor{primary}{HTML}{164194}
+      	\definecolor{secondary}{HTML}{009d43}
+      	\definecolor{tertiary}{HTML}{a8563c}
+ 	\colorRow{UFRN}\\[0.3cm]
+    \definecolor{primaryLight}{HTML}{34495e}
+    \definecolor{primary}{HTML}{2d3e50}
+    \definecolor{secondary}{HTML}{d15306}
+    \definecolor{tertiary}{HTML}{35837b}
  	\colorRow{Asphalt}\\[0.3cm]
 	\definecolor{primaryLight}{HTML}{3a99d9}
 	\definecolor{primary}{HTML}{2e81b7}

@@ -31,6 +31,9 @@
 \ExecuteOptionsBeamer{style=asphalt} %default
 \ProcessOptionsBeamer
 
+\def\beamer@mytheme@styleasphalt{asphalt}%
+\def\beamer@mytheme@styleufrn{ufrn}%
+\def\beamer@mytheme@styleect{ect}%
 \def\beamer@mytheme@stylegreen{green}%
 \def\beamer@mytheme@styleblue{blue}%
 \def\beamer@mytheme@stylered{red}%
@@ -60,13 +63,24 @@
 		\definecolor{primary}{HTML}{424242}
 		\definecolor{secondary}{HTML}{518071}
 		\definecolor{tertiary}{HTML}{8b7687}
-    \else% 
-    	% Asphalt by default
+    \else\ifx\beamer@mytheme@style\beamer@mytheme@styleasphalt%
+    	% Asphalt
       	\definecolor{primaryLight}{HTML}{34495e}
       	\definecolor{primary}{HTML}{2d3e50}
       	\definecolor{secondary}{HTML}{d15306}
       	\definecolor{tertiary}{HTML}{35837b}
-    \fi\fi\fi%
+    \else\ifx\beamer@mytheme@style\beamer@mytheme@styleufrn%
+    	% UFRN
+      	\definecolor{primaryLight}{HTML}{0095db}
+      	\definecolor{primary}{HTML}{164194}
+      	\definecolor{secondary}{HTML}{009d43}
+      	\definecolor{tertiary}{HTML}{a8563c}
+    \else% ECT by default
+      	\definecolor{primaryLight}{cmyk}{1.00,0.60,0.40,0}
+      	\definecolor{primary}{cmyk}{.35,0,0,1.0}
+      	\definecolor{secondary}{cmyk}{0.28,0,0.85,0.17}
+      	\definecolor{tertiary}{cmyk}{0.7,0.30,0.0,0.00}
+    \fi\fi\fi\fi\fi%
 \fi%
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
