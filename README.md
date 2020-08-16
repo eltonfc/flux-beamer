@@ -35,7 +35,7 @@ Flux provides five differents color palettes. (asphalt, blue, red, green, gray)
 \usetheme[style=ect]{flux} % Available styles: ect, ufrn, asphalt, blue, red, green, gray
 
 \title{Flux beamer template}
-\subtitle{Modern theme v0.1}
+\subtitle{Modern theme v0.2 --- ECT--UFRN}
 \author{John Doe}
 \institute{Institute, location}
 \date{\today}
